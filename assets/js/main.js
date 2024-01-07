@@ -6,8 +6,8 @@ console.log(dataSets);
 const sectionEl = document.querySelector("section");
 
 dataSets.forEach((datas)=>{
-    sectionEl.innerHTML += `
-    
+    sectionEl.innerHTML += 
+    `
     <div class="px-5 py-5 mt-10 bg-blue-500 max-w-md items-center flex space-x-10">
     <div class="items-center  flex flex-col" >
       <img src="${datas.profile}" alt="" width="120" height="120" class="rounded-full ">
@@ -21,24 +21,9 @@ dataSets.forEach((datas)=>{
       <p class="text-blue-950">Skill : <span class="text-white" >${datas.skillSet.join(" , ")}</span></p>
     
     </div>
-     </div>`
+     </div>
+     `
 
-    //  `
-    // <div class="px-5 py-5 mt-10 bg-blue-400 max-w-md items-center flex space-x-10">
-    // <div class="items-center  flex flex-col" >
-    //   <img src="${datas.profile}" alt="" width="120" height="120" class="rounded-full ">
-    // </div>
-    // <div class="font-medium text-sm text-gray-100 flex flex-col justify-center">
-    // <p class="mt-1 font-semibold text-lg text-blue-950">${datas.name.toUpperCase()}</p>
-    // <P>Age : <span class = "text-blue-900">${datas.age}</span></P>
-    // <P>Role : <span>${datas.role}</span></P>
-    //   <p>Member of CDN : <span>${datas.isMember}</span></p>
-    //   <p>Location : <span>${datas.location}</span></p>
-    //   <p>Skill : <span>${datas.skillSet.join(" , ")}</span></p>
-    
-    //  </div>
-    // `
-    // ;
 
 })
 
